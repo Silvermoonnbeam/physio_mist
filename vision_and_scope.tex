@@ -1,6 +1,23 @@
 \documentclass{article}
 \usepackage{url}
+\usepackage[spacing,kerning]{microtype}
+\usepackage[letterpaper]{geometry}
+
+\title{Vision and Scope Document\\
+\bigskip
+{\large for}\\
+\bigskip
+PhysioMIST}
+\author{Mark Caral, Sara Cummins, BarbaraJoy Jones, Joshua Lee}
+\date{September 14, 2009\\{\sc Eecs} 393}
 \begin{document}
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+\tableofcontents
+\newpage
 
 \section{Requirements}
 \subsection{Background}
@@ -16,21 +33,21 @@ Implementing this project will allow the PhysioMIST user to extend their researc
 Model integration will lead researchers to build more accurate and complete models for investigating specific physiological phenomena to improve the quality of medical and biological research.
 
 \subsection{Objectives and Success Criteria}
-\begin{itemize}
-\item O-1: Provide a graphical interface for users to associate anatomical information with model components
-\item O-2: Provide a graphical interface for users to integrate components from one or more models on a one-to-one basis
-\item O-3: Provide a graphical interface for users to adopt other types of model integration, such as many-to-one or one-to-many
-\item O-4: Provide a robust representation of the information contained in a model
-\item SC-1: Allow an experienced JSim user to become comfortable working with existing models within 2 days
-\item SC-2: Efficiently provide the user with accurate integration results
-\item SC-3: The responsiveness of the GUI will not be affected by the complexity of the model integration
-\end{itemize}
+\begin{description}
+\item[O-1] Provide a graphical interface for users to associate anatomical information with model components
+\item[O-2] Provide a graphical interface for users to integrate components from one or more models on a one-to-one basis
+\item[O-3] Provide a graphical interface for users to adopt other types of model integration, such as many-to-one or one-to-many
+\item[O-4] Provide a robust representation of the information contained in a model
+\item[SC-1] Allow an experienced JSim user to become comfortable working with existing models within 2 days
+\item[SC-2] Efficiently provide the user with accurate integration results
+\item[SC-3] The responsiveness of the GUI will not be affected by the complexity of the model integration
+\end{description}
 
 \subsection{Risks}
-\begin{itemize}
-\item RI-1: The PhysioMIST software may not be adopted by current JSim users
-\item RI-2: Integrated models produced by PhysioMIST may be too complex to be imported by existing software
-\end{itemize}
+\begin{description}
+\item[RI-1] The PhysioMIST software may not be adopted by current JSim users
+\item[RI-2] Integrated models produced by PhysioMIST may be too complex to be imported by existing software
+\end{description}
 
 \section{Vision of the Solution}
 \subsection{High Priority Features}
