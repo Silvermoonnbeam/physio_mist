@@ -1,3 +1,7 @@
+\documentclass{article}
+\usepackage{url}
+\begin{document}
+
 \section{Requirements}
 \subsection{Background}
 PhysioMIST is an emerging open source programming interface for modeling human physiology by integrating mathematical models of physiological processes.
@@ -19,22 +23,38 @@ Model integration will lead researchers to build more accurate and complete mode
 \item O-4: Provide a robust representation of the information contained in a model
 \item SC-1: Allow an experienced JSim user to become comfortable working with existing models within 2 days
 \item SC-2: Efficiently provide the user with accurate integration results
+\item SC-3: The responsiveness of the GUI will not be affected by the complexity of the model integration
 \end{itemize}
 
 \subsection{Risks}
 \begin{itemize}
 \item RI-1: The PhysioMIST software may not be adopted by current JSim users
 \item RI-2: Integrated models produced by PhysioMIST may be too complex to be imported by existing software
+\end{itemize}
 
 \section{Vision of the Solution}
-\subsection{Vision Statement}
-\subsection{Major Features}
+\subsection{High Priority Features}
+\begin{itemize}
+\item Import existing models written in the JSim standard
+\item Save anatomical information associated with model components
+\item Integrate model components on a one-to-one basis
+\end{itemize}
+\subsection{Low Priority Features}
+\begin{itemize}
+\item Integrate model components on a one-to-many basis
+\item Integrate model components on a many-to-one basis
+\item Display simulation results for integrated models
+\end{itemize}
 \subsection{Assumptions and Dependencies}
+This project makes the assumption that the existing PhysioMIST codebase it depends on is easily extendable and capable of performing the integration and simulation processes.
 
 \section{Scope and Limitations}
 \subsection{Release Scope}
+Low priority features may not be implemented in the planned December release.
 \subsection{Limitations and Exclusions}
+The PhysioMIST software only accepts models in the JSim standard format and the PhysioMIST internal format.
 
-\section{Project Priorities}
+\section{See Also}
+\url{http://robotics.case.edu/modeling_simulation_biological_systems.html}
 
-\section{References}
+\end{document}
